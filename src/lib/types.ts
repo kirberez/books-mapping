@@ -27,6 +27,6 @@ export interface BookInformation {
   id: number;
   name: string;
   description: string;
-  author: User;
+  author?: User;
   reviews: ReviewInformation[];
 }

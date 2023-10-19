@@ -6,7 +6,7 @@ const Card: FC<{ book: BookInformation }> = ({ book }) => {
     <div>
       <h3>{book.name}</h3>
       <p>
-        <b>Автор</b>: {book.author.name}
+        <b>Автор</b>: {book.author?.name || "Отсутствует"}
       </p>
       <p>
         <b>Описание</b>: {book.description}
